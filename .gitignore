@@ -1,0 +1,8 @@
+# Entorno virtual
+venv/
+
+# Archivos sensibles y credenciales
+.env
+
+# Resultados locales si prefieres no subirlos (opcional)
+data/
