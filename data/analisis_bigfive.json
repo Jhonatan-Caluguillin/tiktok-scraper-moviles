@@ -1,0 +1,89 @@
+{
+    "usuario": "Andres Caluguillin",
+    "fecha_analisis": "2026-10-21 13:21:53",
+    "big_five_scores": {
+        "Openness": {
+            "score": 64,
+            "descripcion": "Muestra una apertura moderada hacia la autoexpresión digital y la experimentación de formatos en video, aunque mantiene un patrón temático reservado y constante."
+        },
+        "Conscientiousness": {
+            "score": 72,
+            "descripcion": "Demuestra alta perseverancia y disciplina conductual al sostener la publicación periódica de contenido con independencia del volumen de validación externa o interacción inmediata."
+        },
+        "Extraversion": {
+            "score": 53,
+            "descripcion": "Presenta un nivel intermedio de extraversión; se orienta a compartir contenido con el entorno social sin recurrir a tácticas de alta demanda de atención o polarización expansiva."
+        },
+        "Agreeableness": {
+            "score": 60,
+            "descripcion": "Comportamiento prosocial implícito caracterizado por publicaciones pacíficas y libres de confrontación, reflejando una postura conciliadora frente a su audiencia."
+        },
+        "Neuroticism": {
+            "score": 38,
+            "descripcion": "Baja reactividad negativa y notable estabilidad emocional, evidenciada por la tolerancia a la ausencia de engagement constante sin alterar su pauta de actividad."
+        }
+    },
+    "asociacion_videos": [
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7688407552505253127",
+            "likes": "27",
+            "rasgo_relevante": "Extraversion",
+            "observacion": "Mayor nivel de resonancia social y recepción comunitaria dentro de su histórico reciente, evidenciando conexión con el espectador."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7685216230852021512",
+            "likes": "0",
+            "rasgo_relevante": "Conscientiousness",
+            "observacion": "Mantenimiento de la disciplina de publicación sin verse afectado por la ausencia inmediata de retroalimentación numérica."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7675597039668956423",
+            "likes": "0",
+            "rasgo_relevante": "Neuroticism",
+            "observacion": "Estabilidad afectiva reflejada en la continuidad de su actividad pública sin manifestar desánimo frente al nulo engagement."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7663323494079286546",
+            "likes": "0",
+            "rasgo_relevante": "Openness",
+            "observacion": "Disposición a compartir ideas y experiencias personales con un enfoque intrínseco, priorizando la expresión sobre el alcance."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7654068478483139848",
+            "likes": "0",
+            "rasgo_relevante": "Conscientiousness",
+            "observacion": "Constancia en la producción y subida de contenido sistemático como parte de un hábito personal bien estructurado."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7652584055032007954",
+            "likes": "20",
+            "rasgo_relevante": "Agreeableness",
+            "observacion": "Generación de empatía y afinidad orgánica con su círculo de seguidores, traduciéndose en una respuesta afirmativa no conflictiva."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7647621713227697426",
+            "likes": "19",
+            "rasgo_relevante": "Extraversion",
+            "observacion": "Capacidad de proyectar un estímulo visual o verbal que logra retener la atención positiva de su entorno digital directo."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7643183125895417096",
+            "likes": "12",
+            "rasgo_relevante": "Agreeableness",
+            "observacion": "Tono comunicacional receptivo que promueve aceptación moderada dentro de una red de contactos leal."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7638732092771273991",
+            "likes": "0",
+            "rasgo_relevante": "Neuroticism",
+            "observacion": "Tolerancia a la frustración y baja sensibilidad al rechazo algorítmico, preservando el ritmo de creación sin señales de ansiedad."
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7636623512551050503",
+            "likes": "8",
+            "rasgo_relevante": "Openness",
+            "observacion": "Curiosidad por explorar formatos de comunicación que gradualmente captan la atención inicial de su nicho."
+        }
+    ],
+    "conclusion_general": "Andres Caluguillin presenta un perfil caracterizado por una alta perseverancia (Conscientiousness) y una sólida estabilidad emocional (bajo Neuroticism). Su conducta digital se guía principalmente por motivaciones intrínsecas de autoexpresión y constancia más que por la necesidad compulsiva de aprobación externa, manteniendo un estilo equilibrado, prudente y adaptativo frente a las fluctuaciones de interacción en la plataforma."
+}

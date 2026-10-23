@@ -1,0 +1,179 @@
+{
+    "usuario": "Andres Caluguillin",
+    "fecha_analisis": "2026-10-21 13:21:53",
+    "big_five_general": {
+        "Openness": {
+            "score": 64,
+            "descripcion": "Muestra disposición a experimentar con diversos temas y formatos, con una búsqueda latente de diferenciación creativa, aunque con resultados dispersos."
+        },
+        "Conscientiousness": {
+            "score": 46,
+            "descripcion": "Presenta irregularidad en la constancia de publicación y estructuración de llamadas a la acción, denotando un enfoque más intuitivo que metódico."
+        },
+        "Extraversion": {
+            "score": 58,
+            "descripcion": "Capacidad moderada de proyección social y expresión directa a cámara, conectando mejor cuando adopta narrativas extrovertidas y dinámicas."
+        },
+        "Agreeableness": {
+            "score": 52,
+            "descripcion": "Tono predominantemente accesible y no confrontativo, aunque la interacción comunitaria directa y recíproca se mantiene en niveles iniciales."
+        },
+        "Neuroticism": {
+            "score": 38,
+            "descripcion": "Estabilidad emocional aceptable; no se evidencian signos marcados de reactividad negativa ni vulnerabilidad explícita en su contenido."
+        }
+    },
+    "analisis_videos_detallado": [
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7688407552505253127",
+            "likes": "27",
+            "big_five_video": {
+                "Openness": 30,
+                "Conscientiousness": 15,
+                "Extraversion": 35,
+                "Agreeableness": 15,
+                "Neuroticism": 5
+            },
+            "logica_negocio": {
+                "indice_comercial": 68.4,
+                "recomendacion_estrategica": "Contenido con buen potencial orgánico; recomendado para activaciones de prueba de producto y pauta ligera orientada a alcance."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7685216230852021512",
+            "likes": "0",
+            "big_five_video": {
+                "Openness": 25,
+                "Conscientiousness": 20,
+                "Extraversion": 20,
+                "Agreeableness": 15,
+                "Neuroticism": 20
+            },
+            "logica_negocio": {
+                "indice_comercial": 15.0,
+                "recomendacion_estrategica": "No recomendado para patrocinios ni pauta; requiere optimización de ganchos iniciales y claridad tematica."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7675597039668956423",
+            "likes": "0",
+            "big_five_video": {
+                "Openness": 30,
+                "Conscientiousness": 20,
+                "Extraversion": 20,
+                "Agreeableness": 10,
+                "Neuroticism": 20
+            },
+            "logica_negocio": {
+                "indice_comercial": 12.5,
+                "recomendacion_estrategica": "Baja tracción comercial; contenido apto únicamente para experimentación interna de formatos de baja prioridad."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7663323494079286546",
+            "likes": "0",
+            "big_five_video": {
+                "Openness": 25,
+                "Conscientiousness": 25,
+                "Extraversion": 20,
+                "Agreeableness": 15,
+                "Neuroticism": 15
+            },
+            "logica_negocio": {
+                "indice_comercial": 14.0,
+                "recomendacion_estrategica": "No apto para campañas comerciales pagadas debido a nulo retorno de interacción e impacto nulo en audiencia."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7654068478483139848",
+            "likes": "0",
+            "big_five_video": {
+                "Openness": 35,
+                "Conscientiousness": 15,
+                "Extraversion": 20,
+                "Agreeableness": 15,
+                "Neuroticism": 15
+            },
+            "logica_negocio": {
+                "indice_comercial": 13.5,
+                "recomendacion_estrategica": "Enfoque conceptual sin tracción de mercado; reformular propuesta visual antes de considerar integración de marca."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7652584055032007954",
+            "likes": "20",
+            "big_five_video": {
+                "Openness": 25,
+                "Conscientiousness": 20,
+                "Extraversion": 30,
+                "Agreeableness": 20,
+                "Neuroticism": 5
+            },
+            "logica_negocio": {
+                "indice_comercial": 58.0,
+                "recomendacion_estrategica": "Contenido enfocado en fidelización comunitaria y reconocimiento local; apto para micro-patrocinios orgánicos."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7647621713227697426",
+            "likes": "19",
+            "big_five_video": {
+                "Openness": 20,
+                "Conscientiousness": 25,
+                "Extraversion": 30,
+                "Agreeableness": 20,
+                "Neuroticism": 5
+            },
+            "logica_negocio": {
+                "indice_comercial": 56.2,
+                "recomendacion_estrategica": "Buen desempeño relativo frente a la base de seguidores; viable para menciones de producto de nicho o colaboraciones de canje."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7643183125895417096",
+            "likes": "12",
+            "big_five_video": {
+                "Openness": 25,
+                "Conscientiousness": 20,
+                "Extraversion": 25,
+                "Agreeableness": 20,
+                "Neuroticism": 10
+            },
+            "logica_negocio": {
+                "indice_comercial": 42.0,
+                "recomendacion_estrategica": "Rendimiento moderado; recomendable únicamente como contenido secundario de apoyo en estrategias multicanal."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7638732092771273991",
+            "likes": "0",
+            "big_five_video": {
+                "Openness": 20,
+                "Conscientiousness": 20,
+                "Extraversion": 25,
+                "Agreeableness": 15,
+                "Neuroticism": 20
+            },
+            "logica_negocio": {
+                "indice_comercial": 11.0,
+                "recomendacion_estrategica": "Inadecuado para monetización publicitaria; tasa de rebote estimada muy alta y retención insuficiente."
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@andrescaluguillin/video/7636623512551050503",
+            "likes": "8",
+            "big_five_video": {
+                "Openness": 20,
+                "Conscientiousness": 20,
+                "Extraversion": 30,
+                "Agreeableness": 20,
+                "Neuroticism": 10
+            },
+            "logica_negocio": {
+                "indice_comercial": 34.5,
+                "recomendacion_estrategica": "Tracción básica en audiencia núcleo; no prioritario para pauta comercial hasta elevar volumen de interacciones."
+            }
+        }
+    ],
+    "conclusion_negocio": "El perfil de Andres Caluguillin exhibe una marcada volatilidad en el engagement, con videos que alcanzan un excelente ratio de interacción relativo a sus 215 seguidores (hasta 12.5% de likes) contrastados con publicaciones sin tracción (0 likes). Psicológicamente, los contenidos de mayor rendimiento coinciden con picos de Extraversión y Apertura, donde la comunicación es espontánea y accesible. A nivel comercial, el perfil se ubica en fase 'Nano-Creator de Nicho': actualmente no se recomienda para pauta institucional de alto presupuesto ni campañas corporativas masivas, pero resulta funcional para esquemas de marketing de afiliados, programas de embajadores iniciales por canje o pruebas piloto de producto orientadas a validación de audiencia local."
+}
