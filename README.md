@@ -67,3 +67,31 @@ Datos obtenidos
 
 -Guarda los datos procesados en data/resultado_tiktok.json.
 -Genera el informe psicométrico detallado en data/analisis_bigfive.json.
+
+🧠 Módulo de Análisis Psicométrico (Big Five) & Lógica de Negocio
+
+Este módulo procesa las métricas estructuradas de los videos extraídos de TikTok (resultado_tiktok.json) utilizando la API de Google Gemini (google-genai). Realiza una evaluación psicológica conductual del creador y aplica reglas de negocio para determinar la viabilidad comercial del contenido.
+
+🚀 Funcionalidades Integradas
+1. Evaluación Psicométrica Big Five (OCEAN)
+Perfil General: Evalúa la personalidad global del creador en una escala de 0 a 100 para cada uno de los 5 rasgos:
+
+Openness (Apertura a la experiencia)
+
+Conscientiousness (Responsabilidad / Tesón)
+
+Extraversion (Extraversión)
+
+Agreeableness (Amabilidad / Empatía)
+
+Neuroticism (Inestabilidad emocional)
+
+2. Análisis Relativo por Video (Distribución al 100%)
+Proporción de Rasgos: Para cada video individual, asigna una distribución porcentual donde la suma de los 5 rasgos de la personalidad da exactamente el 100% 
+
+3. Lógica de Negocio y Viabilidad Comercial
+Índice Comercial (indice_comercial): Puntuación cuantitativa (0 a 100) basada en la relación entre engagement (likes/seguidores) y la personalidad proyectada en el contenido.
+
+Recomendación Estratégica (recomendacion_estrategica): Clasificación automatizada del video orientada a tomar decisiones de inversión publicitaria , Contenido de fidelización comunitaria, No recomendado para patrocinios.
+
+Conclusión Ejecutiva de Negocio: Resumen global sobre la idoneidad del creador para trabajar con marcas o patrocinadores.

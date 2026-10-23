@@ -7,12 +7,12 @@ from google import genai
 from google.genai import types
 from google.genai.errors import ServerError
 
-# Carga las variables de entorno desde el archivo .env de forma segura
+# Intentamos cargar desde .env si existe, o usamos la API Key asignada directamente
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
-    raise ValueError("⚠️ No se encontró la GEMINI_API_KEY. Asegúrate de crear tu archivo .env con la clave.")
+    raise ValueError("⚠️ No se encontró la GEMINI_API_KEY.")
 
 def cargar_resultados(ruta_json="data/resultado_tiktok.json"):
     """Carga los datos reales extraídos por el scraper."""
@@ -23,53 +23,60 @@ def cargar_resultados(ruta_json="data/resultado_tiktok.json"):
         return json.load(f)
 
 def generar_analisis_bigfive_gemini(datos):
-    """Envía las métricas y enlaces a Gemini usando la SDK oficial google-genai."""
+    """Envía las métricas a Gemini para evaluar el Big Five sumando 100% por video y aplicando lógica de negocio."""
     perfil = datos.get("perfil", {})
     videos = datos.get("videos", [])
 
     prompt = f"""
-    Eres un psicólogo experto en análisis conductual y métricas de redes sociales.
-    Analiza el perfil de TikTok del usuario '{perfil.get('username')}' con estas métricas:
+    Eres un psicólogo experto en análisis conductual, métricas de redes sociales y estrategia de negocios digitales.
+    Analiza el perfil de TikTok del usuario '{perfil.get('username')}' con las siguientes métricas:
     - Seguidores: {perfil.get('followers')}
     - Likes Totales: {perfil.get('total_likes')}
     - Videos procesados con sus enlaces y métricas:
     {json.dumps(videos, indent=2, ensure_ascii=False)}
 
-    Por favor realiza:
-    1. Una evaluación psicométrica del modelo Big Five (OCEAN) asignando puntajes de 0 a 100:
-       - Openness (Apertura a la experiencia)
-       - Conscientiousness (Responsabilidad / Tesón)
-       - Extraversion (Extraversión)
-       - Agreeableness (Amabilidad / Empatía)
-       - Neuroticism (Inestabilidad emocional)
-    2. Relaciona los LINKS DE LOS VIDEOS con el rasgo de personalidad que más respaldan.
+    Por favor realiza lo siguiente:
+    1. Una evaluación general psicométrica del modelo Big Five (OCEAN) para todo el perfil (puntajes de 0 a 100).
+    2. Para CADA VIDEO del listado, asigna un porcentaje a cada uno de los 5 rasgos del Big Five (Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) de tal manera que **la suma de los 5 rasgos de un mismo video dé exactamente el 100%** (ej. 20, 30, 20, 20, 10).
+    3. Aplica una LÓGICA DE NEGOCIO COMERCIAL:
+       - Calcula un "indice_comercial" (0 a 100) basado en el engagement relativo de likes/seguidores y el peso de los rasgos de personalidad proyectados.
+       - Genera una "recomendacion_estrategica" clara para marcas (ej. "Ideal para campañas pagadas/Ads", "Contenido enfocado en fidelización comunitaria", "No recomendado para patrocinios").
 
     Devuelve ÚNICAMENTE un objeto JSON estricto con este formato exacto:
     {{
         "usuario": "{perfil.get('username')}",
         "fecha_analisis": "{datos.get('fecha_extraccion')}",
-        "big_five_scores": {{
-            "Openness": {{ "score": 85, "descripcion": "..." }},
-            "Conscientiousness": {{ "score": 90, "descripcion": "..." }},
-            "Extraversion": {{ "score": 75, "descripcion": "..." }},
-            "Agreeableness": {{ "score": 80, "descripcion": "..." }},
-            "Neuroticism": {{ "score": 20, "descripcion": "..." }}
+        "big_five_general": {{
+            "Openness": {{ "score": 85, "descripcion": "Explicación general sobre apertura a la experiencia." }},
+            "Conscientiousness": {{ "score": 90, "descripcion": "Explicación general sobre responsabilidad y orden." }},
+            "Extraversion": {{ "score": 75, "descripcion": "Explicación general sobre extraversión e interacción." }},
+            "Agreeableness": {{ "score": 80, "descripcion": "Explicación general sobre empatía y amabilidad." }},
+            "Neuroticism": {{ "score": 20, "descripcion": "Explicación general sobre estabilidad emocional." }}
         }},
-        "asociacion_videos": [
+        "analisis_videos_detallado": [
             {{
                 "url": "URL_DEL_VIDEO",
                 "likes": "CANTIDAD_LIKES",
-                "rasgo_relevante": "Rasgo OCEAN",
-                "observacion": "Explicación de por qué respalda este rasgo"
+                "big_five_video": {{
+                    "Openness": 25,
+                    "Conscientiousness": 15,
+                    "Extraversion": 40,
+                    "Agreeableness": 10,
+                    "Neuroticism": 10
+                }},
+                "logica_negocio": {{
+                    "indice_comercial": 88.5,
+                    "recomendacion_estrategica": "Excelente opción para pauta comercial debido a su alta extraversión y buen rendimiento."
+                }}
             }}
         ],
-        "conclusion_general": "Resumen psicométrico general del perfil."
+        "conclusion_negocio": "Resumen ejecutivo combinando el perfil psicológico general con la viabilidad comercial del usuario para patrocinadores o marcas."
     }}
     """
 
     client = genai.Client(api_key=GEMINI_API_KEY)
     
-    # Modelos vigentes recomendados por la API
+    # Modelos vigentes
     modelos_a_probar = ['gemini-3.8-flash', 'gemini-3.1-pro-preview']
     
     for modelo in modelos_a_probar:
@@ -93,7 +100,7 @@ def generar_analisis_bigfive_gemini(datos):
 
     raise Exception("No se pudo completar la solicitud con los modelos disponibles.")
 
-def guardar_reporte(resultado, ruta_salida="data/analisis_bigfive.json"):
+def guardar_reporte(resultado, ruta_salida="data/analisis_bigfive_negocio.json"):
     """Guarda el informe en la carpeta data/."""
     os.makedirs(os.path.dirname(ruta_salida), exist_ok=True)
     with open(ruta_salida, "w", encoding="utf-8") as f:
